@@ -24,6 +24,7 @@ function setup() {
   gui_setup.add(gui, 'x', 0, windowWidth-132);
   gui_setup.add(gui, 'y', 0, windowHeight-180);
   gui_setup.add(gui, 'bird_friend');
+  gui_setup.add(gui, 'description');
   
   b2[1] = random(0,4)*windowWidth/5 + b1[1];
   b2[2] = random(0,4)*windowHeight/5 + b1[2];
@@ -40,7 +41,7 @@ function setup() {
 function draw() {
   
   birdColor();
-  
+  description();
   frameRate(gui.speed);
   background(197, 221, 230);
   
@@ -337,12 +338,21 @@ function update() {
   redraw();
 }
 
+function description(){
+    if(gui.description){
+        d.show();
+    }else{
+        d.hide();
+    }
+}
+
 function Gui(){
   this.bird_color = 1;
   this.speed = 20;
   this.x = (windowWidth/2)-66;
   this.y = (windowHeight/2)-90;
   this.bird_friend = true;
+  this.description = true;
 }
 
 function windowResized() {

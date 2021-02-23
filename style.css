@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow:hidden;
 }
 
 canvas {
@@ -52,4 +53,54 @@ canvas {
 
 .heading-2 {
   margin-top: 10px;
+}
+
+.dg li:not(.folder) {
+    background: #5a462029;
+    border-bottom: 1px solid #2c2c2c3b;
+}
+
+.dg {
+    color: #000;
+    font: 11px 'Lucida Grande', sans-serif;
+    text-shadow: 0 -1px 0 #111;
+}
+.dg .c .slider-fg {
+    background: #ffffff;
+    max-width: 100%;
+}
+
+.dg .c .slider {
+    background: #3030304a;
+    cursor: ew-resize;
+}
+
+.dg .cr.number input[type=text] {
+    color: #000000;
+}
+
+.dg .c input[type=text] {
+    background: #30303000;
+    outline: none;
+}
+
+.dg.main .close-button {
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+    border: 0;
+    line-height: 19px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #a989488f;
+}
+
+.dg .cr.number {
+    border-left: 3px solid #2fa1d600;
+}
+
+.dg .cr.boolean {
+    border-left: 3px solid #80678700;
 }
