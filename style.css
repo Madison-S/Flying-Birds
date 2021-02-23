@@ -71,7 +71,7 @@ canvas {
 }
 
 .dg .c .slider {
-    background: #3030304a;
+    background: #5050504a;
     cursor: ew-resize;
 }
 
@@ -103,4 +103,28 @@ canvas {
 
 .dg .cr.boolean {
     border-left: 3px solid #80678700;
+}
+
+.dg .c .slider:hover .slider-fg {
+    background: #ffffff;
+}
+
+.dg .c .slider:hover .slider-fg {
+    background: #ffffff;
+}
+
+.dg .c .slider:hover {
+    background: #5050504a;
+}
+
+.dg .c input[type=text]:hover {
+    background: #50505000;
+}
+
+.dg .cr.function:hover, .dg .cr.boolean:hover {
+    background: #5a462029;
+}
+
+.dg.main .close-button:hover {
+    background-color: #a989488f;
 }
